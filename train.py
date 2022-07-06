@@ -24,11 +24,6 @@ import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 
 parser = argparse.ArgumentParser()
-#parser.add_argument('--pretrain_model_name', type=str, default='/home/bwang/project/nlpcc2022/share/biobert-base-cased-v1.2/', help='pretrain Model type')
-#parser.add_argument('--pretrain_model_name', type=str, default='/home/bwang/project/nlpcc2022/share/scibert_scivocab_uncased/', help='pretrain Model type')
-#parser.add_argument('--pretrain_model_name', type=str, default='/home/bwang/share/bert-large-uncased', help='pretrain Model type')
-#parser.add_argument('--pretrain_model_name', type=str, default='/home/bwang/share/bert-base-uncased', help='pretrain Model type')
-#parser.add_argument('--pretrain_model_name', type=str, default="D:/deeplearning/huggingface_models/bert-base-uncased", help='pretrain Model type')
 parser.add_argument('--pretrain_model_name', type=str, default="bert-base-uncased", help='pretrain Model type')
 parser.add_argument('--train_batch_size', type=int, default=32) #original is 16
 parser.add_argument('--eval_batch_size', type=int, default=8)
